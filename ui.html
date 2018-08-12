@@ -7,6 +7,7 @@
 
 	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
 	<link rel="stylesheet" href="jsExample.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="jsExample.js"></script>
 
 </head>
@@ -15,27 +16,40 @@
  	
  	<div class="login-wrap">
 		<div class="login-html">
-			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Python Launcher</label>
-			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">About Example</label>
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Chat Bot</label>
+			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">About App</label>
 			<div class="login-form">
 				<div class="sign-in-htm">
 					
 					<div class="group">
-						<input id="htmlButtonPress" type="submit" class="button" value="launch python code">
+						<input id="htmlButtonPress" type="submit" class="button" value="Activate">
 					</div>
 					<div class="group">
-						<input id="interact" type="submit" class="button" value="interact with python code">
+						<input id="interact" type="submit" class="button" value="interact">
 					</div>
-					<div class="group">
+					<!-- <div class="group">
+						<input type="text" id="input" placeholder=" Enter ur query here!!">
+					</div> -->
+					<div class="input-group mb-3">
+  						<div class="input-group-prepend">
+    						<span class="input-group-text" id="inputGroup-sizing-default">Ask</span>
+  						</div>
+  						<input type="text" id="input" class="form-control" placeholder=" Enter ur query here!!" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+					</div>
+					<!-- <div class="group">
 						<input id="exit" type="submit" class="button" value="terminate python code">
 					</div>
-
-					<div class="group">
+ -->
+					<!-- <div class="group">
 						<input id="json" type="submit" class="button" value="how to open a file">
-					</div>
+					</div> -->
 
-					<div class="foot-lnk">
+					<!-- <div class="foot-lnk">
 						<a href="#forgot">Copyrights by Keybraker © 2017</a>
+					</div> -->
+
+					<div id="output">
+						HERE GOES THE OUTPUT
 					</div>
 
 				</div>
@@ -44,7 +58,7 @@
 					<label for="user" class="label">
 						Just a simple example of how electron can be used as a python GUI.
 						<br><br>
-						by Keybraker
+						by ChatBot Team
 					</label>
 					
 				</div>

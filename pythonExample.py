@@ -3,13 +3,13 @@ import sys
 # FUNCTIONS
 
 def start():
-	print 'I STARTED FROM WITHIN NODE.JS'
+	print ('CHAT BOT ACTIVATED!!')
 
 def respond():
-	print 'I GOT hello FROM NODE.JS -> HI THERE EXAMPLE ANALYZER'
+	print ('HI THERE EXAMPLE ANALYZER')
 
 def ender():
-	print 'I GOT exit FROM NODE.JS -> I STOPPED FROM WITHIN NODE.JS'
+	print ('CHAT BOT DEACTIVATED!!')
 	exit()
 
 
@@ -18,10 +18,12 @@ def ender():
 start()
 
 while True:
-    line = sys.stdin.readline()
-    if line == "exit\n":
+    # line = sys.stdin.readline()
+    line=input()
+
+    if line == "exit":
     	ender()
-    elif line == "hello\n":
+    elif line == "hello":
     	respond()
     else:
-    	print 'dunno'
+    	print ('dunno')
